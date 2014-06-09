@@ -32,9 +32,9 @@ are summarized below.
 </table>
 
 Note that when building the [teamengine-web application](https://github.com/opengeospatial/teamengine), 
-if the `ogc.cite` profile is active then all test suite dependencies are incorporated within 
+if the 'ogc.cite' profile is active then all test suite dependencies are incorporated within 
 the WAR file. The 'ets-resources-version' property must be set in ${user.home}/.m2/settings.xml 
-as shown below.
+as shown below, where `YY.MM.DD` denotes the desired release version.
 
     <profile>
       <id>ogc.cite</id>

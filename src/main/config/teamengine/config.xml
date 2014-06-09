@@ -468,17 +468,17 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19136</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-gml-3.2.1-r15</local-name>
+            <local-name>ets-gml32-3.2.1-r16</local-name>
             <title>GML 3.2 (ISO 19136:2007) Conformance Test Suite</title>
             <description>Checks GML application schemas or data sets for conformance to ISO 19136:2007.</description>
           </suite>
           <revision>
-            <name>3.2.1-r15</name>
+            <name>3.2.1-r16</name>
             <status>Beta</status>
             <sources>
-              <source>gml/3.2.1/gml-suite.ctl</source>
+              <source>gml32/3.2.1/ctl</source>
             </sources>
-            <webdir>gml/3.2.1/web</webdir>
+            <webdir>gml32/3.2.1/site</webdir>
           </revision>
         </version>
       </standard>
@@ -499,27 +499,6 @@
               <source>kml22/2.2/ctl</source>
             </sources>
             <webdir>kml22/2.2/site</webdir>
-          </revision>
-        </version>
-      </standard>
-      <standard>
-        <name>OWS Context (OWC)</name>
-        <version>
-          <name>1.0 (pending)</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/cite/owc</namespace-uri>
-            <prefix>tns</prefix>
-            <local-name>ets-owc-1.0-r4</local-name>
-            <title>OWC 1.0 Conformance Test Suite</title>
-            <description>Checks OWS Context documents for conformance to OGC 12-080.</description>
-          </suite>
-          <revision>
-            <name>1.0-r4</name>
-            <status>Alpha</status>
-            <sources>
-              <source>owc/1.0-r4/owc-suite.ctl</source>
-            </sources>
-            <webdir>owc/1.0-r4/web</webdir>
           </revision>
         </version>
       </standard>
