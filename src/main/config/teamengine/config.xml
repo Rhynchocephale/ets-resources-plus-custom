@@ -177,7 +177,7 @@
             <description>Checks WCS implementations for conformance to OGC 05-076.</description>
           </suite>
           <revision>
-            <name>r6</name>
+            <name>r7</name>
             <sources>
               <source>wcs/1.0.0/ctl</source>
             </sources>
@@ -273,7 +273,7 @@
             <description>Checks WFS implementations for conformance to OGC 04-094.</description>
           </suite>
           <revision>
-            <name>r17</name>
+            <name>r18</name>
             <sources>
               <source>wfs/1.1.0/src</source>
             </sources>
@@ -286,17 +286,17 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19142</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-wfs-2.0-r15</local-name>
+            <local-name>ets-wfs20-2.0-r16</local-name>
             <title>WFS 2.0 (ISO 19142:2010) Conformance Test Suite</title>
-            <description>Checks WFS implementations for conformance to ISO 19142:2010.</description>
+            <description>Checks WFS 2.0 implementations for conformance to ISO 19142:2010.</description>
           </suite>
           <revision>
-            <name>2.0-r15</name>
+            <name>2.0-r16</name>
             <status>Beta</status>
             <sources>
-              <source>wfs/2.0.0/wfs-suite.ctl</source>
+              <source>wfs20/2.0.0/ctl</source>
             </sources>
-            <webdir>wfs/2.0.0/web</webdir>
+            <webdir>wfs20/2.0.0/site</webdir>
           </revision>
         </version>
       </standard>
@@ -312,7 +312,7 @@
             <description>Checks WMS implementations for conformance to OGC 01-068r3.</description>
           </suite>
           <revision>
-            <name>r5</name>
+            <name>r6</name>
             <sources>
               <source>wms/1.1.1/ctl</source>
             </sources>
@@ -329,7 +329,7 @@
             <description>Verifies conformance to ISO 19128:2005.</description>
           </suite>
           <revision>
-            <name>r8</name>
+            <name>r9</name>
             <sources>
               <source>wms/1.3.0/ctl</source>
             </sources>

@@ -94,8 +94,8 @@
     </dependency>
     <dependency>
       <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-wfs</artifactId>
-      <version>2.0-r15</version>
+      <artifactId>ets-wfs20</artifactId>
+      <version>2.0-r16</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
