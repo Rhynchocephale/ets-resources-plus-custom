@@ -31,6 +31,7 @@
     <file>
       <source>${project.basedir}/src/main/config/ctl-scripts-release.csv</source>
       <outputDirectory>/</outputDirectory>
+      <lineEnding>unix</lineEnding>
     </file>
     <file>
       <source>${project.basedir}/src/main/config/teamengine/config.xml</source>
