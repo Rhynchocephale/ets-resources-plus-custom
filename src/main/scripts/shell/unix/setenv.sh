@@ -1,3 +1,5 @@
+#export ETS_SRC=$HOME/ets-src
+#mkdir $ETS_SRC 2>/dev/null
 
 #export TE_BASE=$HOME/teamengine
 #mkdir -p $TE_BASE/{work,users,scripts,resources} 2>/dev/null

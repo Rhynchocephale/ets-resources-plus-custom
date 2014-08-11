@@ -1,3 +1,4 @@
+:: Builds CTL script assemblies from source and copies them to TE_BASE.
 :: Reads a CSV file (first argument) where each record contains two fields:
 :: Git repository URL, tag name
 :: Example:
@@ -9,12 +10,11 @@
 set home=%~dp0
 if exist "%home%setenv.bat" call "%home%setenv.bat"
 if "%JAVA_HOME%"=="" echo JAVA_HOME must be set. & goto :eof
-
+if "%ETS_SRC%"=="" echo ETS_SRC must be set. & goto :eof
 if [%1]==[] echo Location of CSV file not specified. & goto :eof
 set csvfile=%~f1
 
-set repobase=%USERPROFILE%\ets-src
-cd /d %repobase%
+cd /d %ETS_SRC%
 for /F "usebackq tokens=1,2 delims=," %%a in ("%csvfile%") do (
   if exist %%~na (
     cd /d %%~na

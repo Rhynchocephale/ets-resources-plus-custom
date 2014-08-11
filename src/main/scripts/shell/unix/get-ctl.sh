@@ -1,0 +1,48 @@
+#!/bin/bash
+# Builds CTL script assemblies from source and copies them to TE_BASE.
+# Reads a CSV file (first argument) where each ETS record contains two fields:
+# Git repository URL, tag name
+# Example:
+# https://github.com/opengeospatial/ets-kml22.git,2.2-r10
+#
+# Note: Maven and Git must be installed and available on the system path
+
+base=`dirname $0`
+if [ -r $base/setenv.sh ]
+then
+  . $base/setenv.sh
+fi
+
+[ -z "$JAVA_HOME" ] && echo "JAVA_HOME must be set." && exit 1
+[ -z "$ETS_SRC" ] && echo "ETS_SRC must be set." && exit 1
+[ -z "$1" ] && echo "Location of CSV file not specified." && exit 1
+csvfile="$1"
+
+pushd $ETS_SRC
+while IFS="," read url tag
+do
+  ets_name=$(basename "$url" .git)
+  if [ -z "$ets_name" ]; then
+    break
+  fi
+  if [ -d "$ETS_SRC/$ets_name" ]; then
+    pushd $ets_name
+    git pull origin
+  else
+    git clone $url
+    pushd $ets_name
+  fi
+  git checkout $tag
+  mvn -DskipTests clean install
+  cp target/*-ctl-scripts.zip $TE_BASE/scripts/
+  popd
+done < "$csvfile"
+
+pushd $TE_BASE/scripts
+# filename patterns which match no files will expand to null string
+shopt -s nullglob
+for f in *.zip
+do
+  "$JAVA_HOME"/bin/jar xf "$f"
+  rm "$f"
+done

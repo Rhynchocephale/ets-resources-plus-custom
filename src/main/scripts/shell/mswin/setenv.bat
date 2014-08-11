@@ -1,3 +1,6 @@
+rem set ETS_SRC=%USERPROFILE%\ets-src
+rem mkdir "%ETS_SRC%" 2>NUL
+
 rem set TE_BASE=%USERPROFILE%\teamengine
 rem mkdir "%TE_BASE%" "%TE_BASE%\work" "%TE_BASE%\users" "%TE_BASE%\scripts" "%TE_BASE%\resources" 2>NUL
 
