@@ -19,7 +19,8 @@ fi
 csvfile="$1"
 
 pushd $ETS_SRC
-while IFS="," read url tag
+# last record in CSV file may not have terminal newline
+while IFS="," read url tag || [ -n "$url" ]
 do
   ets_name=$(basename "$url" .git)
   if [ -z "$ets_name" ]; then
