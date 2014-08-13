@@ -1,5 +1,5 @@
 #!/bin/bash
-# Builds CTL script assemblies from source and copies them to TE_BASE.
+# Sets up a TEAM-engine instance with test suites listed in a CSV file.
 # Reads a CSV file (first argument) where each ETS record contains two fields:
 # Git repository URL, tag name
 # Example:
@@ -7,7 +7,7 @@
 #
 # Note: Maven and Git must be installed and available on the system path
 
-base=`dirname $0`
+base=$(dirname $(readlink -f $0))
 if [ -r $base/setenv.sh ]
 then
   . $base/setenv.sh
@@ -47,3 +47,10 @@ do
   "$JAVA_HOME"/bin/jar xf "$f"
   rm "$f"
 done
+
+pushd $base
+rsync -r --delete ../../lib/ $TE_BASE/resources/lib
+if [ -e "$TE_BASE/config.xml" ]; then
+  mv "$TE_BASE/config.xml" "$TE_BASE/config-PREV.xml"
+fi
+cp ../../config.xml $TE_BASE

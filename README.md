@@ -22,7 +22,7 @@ are summarized below.
   <tr>
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
     <td>A CSV file that supplies the Git repository location and tag name for 
-    the latest test suites. Each record has two fields as shown below.
+    the latest test suite releases. Each record has two fields as shown below.
       <pre>https://github.com/opengeospatial/ets-kml22.git,2.2-r10</pre>
     </td>
   </tr>
@@ -35,8 +35,8 @@ are summarized below.
     <td style="vertical-align: top">bin/</td>
     <td>A directory containing shell scripts for Windows- and UNIX-based hosts:
     <ul>
-      <li><code>get-ctl</code>: Builds CTL script assemblies from source and 
-      puts them in TE_BASE/scripts/ (it takes the CSV file as input).</li>
+      <li><code>setup-tebase</code>: Sets up a TEAM-engine instance (TE_BASE) 
+      with test suites listed in a CSV file.</li>
     </ul>
     </td>
   </tr>

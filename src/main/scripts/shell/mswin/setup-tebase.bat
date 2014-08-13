@@ -1,4 +1,4 @@
-:: Builds CTL script assemblies from source and copies them to TE_BASE.
+:: Sets up a TEAM-engine instance with test suites listed in a CSV file.
 :: Reads a CSV file (first argument) where each record contains two fields:
 :: Git repository URL, tag name
 :: Example:
@@ -30,11 +30,16 @@ for /F "usebackq tokens=1,2 delims=," %%a in ("%csvfile%") do (
 
 cd /d %TE_BASE%\scripts\
 for %%f in (*.zip) do ("%JAVA_HOME%"\bin\jar xf %%f & del %%f)
+
 cd /d %home%
+robocopy ..\..\lib %TE_BASE%\resources\lib *.jar /mir
+if exist "%TE_BASE%\config.xml" rename "%TE_BASE%\config.xml" "config-PREV.xml"
+copy ..\..\config.xml %TE_BASE%\
+
 goto :eof
 
 :buildtag
 call git checkout %1
 call mvn -DskipTests clean install
-copy /y target\*-ctl-scripts.zip %TE_BASE%\scripts\
+copy /y target\*-ctl.zip %TE_BASE%\scripts\
 exit /b
