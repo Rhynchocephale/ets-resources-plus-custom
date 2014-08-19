@@ -18,7 +18,7 @@ cd /d %ETS_SRC%
 for /F "usebackq tokens=1,2 delims=," %%a in ("%csvfile%") do (
   if exist %%~na (
     cd /d %%~na
-    git pull origin
+    git fetch --tags
   )
   if not exist %%~na (
     git clone %%a

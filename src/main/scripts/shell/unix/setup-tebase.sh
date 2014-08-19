@@ -28,14 +28,14 @@ do
   fi
   if [ -d "$ETS_SRC/$ets_name" ]; then
     pushd $ets_name
-    git pull origin
+    git fetch --tags
   else
     git clone $url
     pushd $ets_name
   fi
   git checkout $tag
   mvn -DskipTests clean install
-  cp target/*-ctl-scripts.zip $TE_BASE/scripts/
+  cp target/*-ctl.zip $TE_BASE/scripts/
   popd
 done < "$csvfile"
 

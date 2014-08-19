@@ -16,27 +16,29 @@ are summarized below.
   </tr>
   <tr>
     <td>config-approved.xml</td>
-    <td>A configuration file that only includes test suites that have been 
-    formally approved by the OGC Technical Committee.</td>
+    <td>A configuration file that includes only test suite releases that have 
+    been formally approved for compliance certification by the OGC Technical 
+    Committee.</td>
   </tr>
   <tr>
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
-    <td>A CSV file that supplies the Git repository location and tag name for 
-    the latest test suite releases. Each record has two fields as shown below.
-      <pre>https://github.com/opengeospatial/ets-kml22.git,2.2-r10</pre>
+    <td>A CSV file that supplies the Git repository URL and tag name for the 
+    latest test suite releases. Each line contains two fields as shown below.
+      <pre>https://github.com/opengeospatial/ets-kml22.git,2.2-r11</pre>
     </td>
   </tr>
   <tr>
     <td>lib/</td>
-    <td>A directory containing the required Java libraries; these must be available 
-    on the class path.</td>
+    <td>A directory containing the required Java libraries; these must be 
+    available on the class path.</td>
   </tr>
   <tr>
     <td style="vertical-align: top">bin/</td>
-    <td>A directory containing shell scripts for Windows- and UNIX-based hosts:
+    <td>A directory containing shell scripts for Windows- and UNIX-based 
+    (Linux/Mac) hosts:
     <ul>
       <li><code>setup-tebase</code>: Sets up a TEAM-engine instance (TE_BASE) 
-      with test suites listed in a CSV file.</li>
+      with the test suites listed in a CSV file.</li>
     </ul>
     </td>
   </tr>
@@ -49,9 +51,11 @@ as shown below, where `YY.MM.DD` denotes the desired release version.
 
     <profile>
       <id>ogc.cite</id>
+      <!-- Activate by default or when desired using the -P option
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
+      -->
       <properties>
         <ets-resources-version>YY.MM.DD</ets-resources-version>
       </properties>
