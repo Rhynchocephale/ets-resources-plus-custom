@@ -44,14 +44,31 @@ are summarized below.
   </tr>
 </table>
 
+To setup a TEAM-engine instance, just run the `setup-tebase` script for your environment.
+Several environment variables must be set first (this can be done in the `setenv` script 
+if desired):
+
+* `TE_BASE`: A file system path that refers to the TEAM-engine instance directory.
+* `ETS_SRC`: A file system path that refers to a directory containing the Git repositories; 
+  a repository will be cloned into here if it doesn't already exist.
+* `JAVA_HOME`: Refers to a JDK installation directory.
+
+A CSV file that lists the test suite releases of interest must be given as a script argument:
+
+    $ ./setup-tebase ../../ctl-scripts-release.csv
+
+
 Note that when building the [teamengine-web application](https://github.com/opengeospatial/teamengine), 
-if the 'ogc.cite' profile is active then all test suite dependencies are incorporated within 
-the WAR file. The 'ets-resources-version' property must be set in ${user.home}/.m2/settings.xml 
-as shown below, where `YY.MM.DD` denotes the desired release version.
+if the 'ogc.cite' profile is active then all test suite dependencies from ets-resources are 
+incorporated within the WAR file. Otherwise the contents of the lib/ directory must be 
+copied to the application classpath (WEB-INF/lib). 
+
+The 'ets-resources-version' property is set in ${user.home}/.m2/settings.xml as shown below, 
+where `YY.MM.DD` denotes the desired release version.
 
     <profile>
       <id>ogc.cite</id>
-      <!-- Activate by default or when desired using the -P option
+      <!-- Activate by default or only when desired using the -P option
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>

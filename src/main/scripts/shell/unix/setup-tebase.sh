@@ -16,7 +16,7 @@ fi
 [ -z "$JAVA_HOME" ] && echo "JAVA_HOME must be set." && exit 1
 [ -z "$ETS_SRC" ] && echo "ETS_SRC must be set." && exit 1
 [ -z "$1" ] && echo "Location of CSV file not specified." && exit 1
-csvfile="$1"
+csvfile="$(readlink -f "$1")"
 
 pushd $ETS_SRC
 # last record in CSV file may not have terminal newline
