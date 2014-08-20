@@ -50,7 +50,7 @@ if desired):
 
 * `TE_BASE`: A file system path that refers to the TEAM-engine instance directory.
 * `ETS_SRC`: A file system path that refers to a directory containing the Git repositories; 
-  a repository will be cloned into here if it doesn't already exist.
+  (a repository will be cloned into here if it doesn't already exist).
 * `JAVA_HOME`: Refers to a JDK installation directory.
 
 A CSV file that lists the test suite releases of interest must be given as a script argument:
