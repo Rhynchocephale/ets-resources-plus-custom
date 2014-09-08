@@ -44,9 +44,9 @@ are summarized below.
   </tr>
 </table>
 
-To setup a TEAM-engine instance, just run the `setup-tebase` script for your environment.
-Several environment variables must be set first (this can be done in the `setenv` script 
-if desired):
+To setup a TEAM-engine instance, unpack the archive created by the build process and 
+just run the `setup-tebase` script for your environment. Several environment variables 
+must be set first (this can be done in the `setenv` script if desired):
 
 * `TE_BASE`: A file system path that refers to the TEAM-engine instance directory.
 * `ETS_SRC`: A file system path that refers to a directory containing the Git repositories; 
