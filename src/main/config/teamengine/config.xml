@@ -168,21 +168,21 @@
       <standard>
         <name>Web Coverage Service (WCS)</name>
         <version>
-          <name>1.0.0</name>
+          <name>2.0.1</name>
           <suite>
-            <namespace-uri>http://www.opengis.net/wcs</namespace-uri>
-            <prefix>wcs1-0-0</prefix>
-            <local-name>main_wcs1-0-0</local-name>
-            <title>WCS 1.0.0 Conformance Test Suite</title>
-            <description>Checks WCS implementations for conformance to OGC 05-076.</description>
+            <namespace-uri>http://www.opengis.net/wcs/2.0</namespace-uri>
+            <prefix>wcs2</prefix>
+            <local-name>suite</local-name>
+            <title>WCS 2.0.1 Conformance Test Suite</title>
+            <description>Checks WCS Core implementations for conformance with OGC 09-110r3, 09-110r4.</description>
           </suite>
           <revision>
-            <name>r7</name>
+            <name>r6</name>
             <sources>
-              <source>wcs/1.0.0/ctl</source>
+              <source>wcs/2.0.1/ctl</source>
             </sources>
-            <resources>wcs/1.0.0/resources</resources>
-            <webdir>wcs/1.0.0/web</webdir>
+            <resources>wcs/2.0.1/resources</resources>
+            <webdir>wcs/2.0.1/web</webdir>
           </revision>
         </version>
         <version>
@@ -204,21 +204,21 @@
           </revision>
         </version>
         <version>
-          <name>2.0.1</name>
+          <name>1.0.0</name>
           <suite>
-            <namespace-uri>http://www.opengis.net/wcs/2.0</namespace-uri>
-            <prefix>wcs2</prefix>
-            <local-name>suite</local-name>
-            <title>WCS 2.0.1 Conformance Test Suite</title>
-            <description>Checks WCS Core implementations for conformance with OGC 09-110r3, 09-110r4.</description>
+            <namespace-uri>http://www.opengis.net/wcs</namespace-uri>
+            <prefix>wcs1-0-0</prefix>
+            <local-name>main_wcs1-0-0</local-name>
+            <title>WCS 1.0.0 Conformance Test Suite</title>
+            <description>Checks WCS implementations for conformance to OGC 05-076.</description>
           </suite>
           <revision>
-            <name>r6</name>
+            <name>r8</name>
             <sources>
-              <source>wcs/2.0.1/ctl</source>
+              <source>wcs/1.0.0/ctl</source>
             </sources>
-            <resources>wcs/2.0.1/resources</resources>
-            <webdir>wcs/2.0.1/web</webdir>
+            <resources>wcs/1.0.0/resources</resources>
+            <webdir>wcs/1.0.0/site</webdir>
           </revision>
         </version>
       </standard>
@@ -296,7 +296,7 @@
             <sources>
               <source>wfs/1.0.0/ctl</source>
             </sources>
-            <webdir>wfs/1.0.0/web</webdir>
+            <webdir>wfs/1.0.0/site</webdir>
           </revision>
         </version>
       </standard>
@@ -312,28 +312,27 @@
             <description>Verifies conformance to ISO 19128:2005.</description>
           </suite>
           <revision>
-            <name>r9</name>
+            <name>r10</name>
             <sources>
               <source>wms/1.3.0/ctl</source>
             </sources>
-            <webdir>wms/1.3.0/web</webdir>
+            <webdir>wms/1.3.0/site</webdir>
           </revision>
         </version>
         <version>
           <name>1.1.1</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/wms</namespace-uri>
+          <suite>        <namespace-uri>http://www.opengis.net/wms</namespace-uri>
             <prefix>wms</prefix>
             <local-name>main_wms</local-name>
             <title>WMS 1.1.1 Conformance Test Suite</title>
             <description>Checks WMS implementations for conformance to OGC 01-068r3.</description>
           </suite>
           <revision>
-            <name>r6</name>
+            <name>1.1.1-r7</name>
             <sources>
               <source>wms/1.1.1/ctl</source>
             </sources>
-            <webdir>wms/1.1.1/web</webdir>
+            <webdir>wms/1.1.1/site</webdir>
           </revision>
         </version>
       </standard>
