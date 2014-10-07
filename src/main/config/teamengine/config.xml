@@ -274,7 +274,7 @@
             <description>Checks WFS implementations for conformance to OGC 04-094.</description>
           </suite>
           <revision>
-            <name>r19</name>
+            <name>r20</name>
             <sources>
               <source>wfs/1.1.0/ctl</source>
             </sources>

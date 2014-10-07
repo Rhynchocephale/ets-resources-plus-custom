@@ -63,7 +63,7 @@ if the 'ogc.cite' profile is active then all test suite dependencies from ets-re
 incorporated within the WAR file. Otherwise the contents of the lib/ directory must be 
 copied to the application classpath (WEB-INF/lib). 
 
-The 'ets-resources-version' property is set in ${user.home}/.m2/settings.xml as shown below, 
+The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
 where `YY.MM.DD` denotes the desired release version.
 
     <profile>
@@ -76,14 +76,8 @@ where `YY.MM.DD` denotes the desired release version.
       <properties>
         <ets-resources-version>YY.MM.DD</ets-resources-version>
       </properties>
-      <repositories>
-        <repository>
-          <id>opengeospatial-cite</id>
-          <name>OGC CITE Repository</name>
-          <url>https://svn.opengeospatial.org/ogc-projects/cite/maven</url>
-          <snapshots>
-            <enabled>false</enabled>
-          </snapshots>
-        </repository>
-      </repositories>
     </profile>
+
+Alternatively, the property can simply be specified as a command-line option:
+
+    $ mvn package -P ogc.cite -Dets-resources-version=YY.MM.DD
