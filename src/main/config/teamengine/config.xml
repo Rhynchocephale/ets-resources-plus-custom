@@ -251,12 +251,12 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19142</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-wfs20-2.0-r17</local-name>
+            <local-name>ets-wfs20-2.0-r18</local-name>
             <title>WFS 2.0 (ISO 19142:2010) Conformance Test Suite</title>
             <description>Checks WFS 2.0 implementations for conformance to ISO 19142:2010.</description>
           </suite>
           <revision>
-            <name>2.0-r17</name>
+            <name>2.0-r18</name>
             <status>Beta</status>
             <sources>
               <source>wfs20/2.0.0/ctl</source>
@@ -467,13 +467,12 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19136</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-gml32-3.2.1-r17</local-name>
+            <local-name>ets-gml32-3.2.1-r18</local-name>
             <title>GML 3.2 (ISO 19136:2007) Conformance Test Suite</title>
             <description>Checks GML application schemas or data sets for conformance to ISO 19136:2007.</description>
           </suite>
           <revision>
-            <name>3.2.1-r17</name>
-            <status>Final</status>
+            <name>3.2.1-r18</name>
             <sources>
               <source>gml32/3.2.1/ctl</source>
             </sources>
