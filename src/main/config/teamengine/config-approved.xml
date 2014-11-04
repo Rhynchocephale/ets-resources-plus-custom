@@ -1,30 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Test suite releases approved for formal compliance certification -->
 <config release="${project.version}">
   <scripts>
     <organization>
       <name>OGC</name>
-      <standard>
-        <name>Catalogue Service - Web (CSW)</name>
-        <version>
-          <name>2.0.2</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/cat/csw/2.0.2</namespace-uri>
-            <prefix>csw</prefix>
-            <local-name>csw-2.0.2-compliance-suite</local-name>
-            <title>CSW 2.0.2 Conformance Test Suite</title>
-            <description>Checks catalogue implementations for conformance to the CSW part of OGC 07-006r1.</description>
-          </suite>
-          <revision>
-            <name>r8</name>
-            <sources>
-              <source>csw/2.0.2/src</source>
-            </sources>
-            <resources>csw/2.0.2/resources</resources>
-            <webdir>csw/2.0.2/web</webdir>
-          </revision>
-        </version>
-      </standard>
       <standard>
         <name>Simple Feature Access - SQL (SFS)</name>
         <version>
@@ -38,109 +16,12 @@
         Revision 1.1" (OGC 99-049). A testing guidance document is available (see OGC 98-046r2).</description>
           </suite>
           <revision>
-            <name>r3</name>
+            <name>r4</name>
             <sources>
               <source>sfs/1.1/ctl</source>
             </sources>
             <resources>sfs/1.1/resources</resources>
             <webdir>sfs/1.1/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>1.2.1</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/sfs</namespace-uri>
-            <prefix>tns</prefix>
-            <local-name>sfs-1.2-suite</local-name>
-            <title>SFS 1.2.1 Conformance Test Suite</title>
-            <description>Verifies conformance to "OpenGIS Simple Features Specification For SQL, 
-        Revision 1.2.1" (OGC 06-104r4). A testing guidance document is available (see OGC 98-046r2).</description>
-          </suite>
-          <revision>
-            <name>r3</name>
-            <sources>
-              <source>sfs/1.2.1/ctl</source>
-            </sources>
-            <resources>sfs/1.2.1/resources</resources>
-            <webdir>sfs/1.2.1/web</webdir>
-          </revision>
-        </version>
-      </standard>
-      <standard>
-        <name>Sensor Observation Service (SOS)</name>
-        <version>
-          <name>1.0.0</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/sos/1.0</namespace-uri>
-            <prefix>sos</prefix>
-            <local-name>suite</local-name>
-            <title>SOS 1.0 Conformance Test Suite</title>
-            <description>Checks service implementations for conformance to OGC 06-009r6.</description>
-          </suite>
-          <revision>
-            <name>r9</name>
-            <sources>
-              <source>sos/1.0.0/ctl</source>
-            </sources>
-            <resources>sos/1.0.0/resources</resources>
-            <webdir>sos/1.0.0/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>2.0</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/sos/2.0</namespace-uri>
-            <prefix>sos</prefix>
-            <local-name>suite</local-name>
-            <title>SOS 2.0 Conformance Test Suite</title>
-            <description>Checks conformance to OGC 12-006.</description>
-          </suite>
-          <revision>
-            <name>r6</name>
-            <sources>
-              <source>sos/2.0.0/ctl</source>
-            </sources>
-            <resources>sos/2.0.0/resources</resources>
-            <webdir>sos/2.0.0/web</webdir>
-          </revision>
-        </version>
-      </standard>
-      <standard>
-        <name>Sensor Planning Service (SPS)</name>
-        <version>
-          <name>1.0</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/sps/1.0</namespace-uri>
-            <prefix>sps</prefix>
-            <local-name>suite</local-name>
-            <title>SPS 1.0 Conformance Test Suite</title>
-            <description>Checks SPS implementations for conformance to OGC 07-014r3.</description>
-          </suite>
-          <revision>
-            <name>r4</name>
-            <sources>
-              <source>sps/1.0/ctl</source>
-            </sources>
-            <resources>sps/1.0/resources</resources>
-            <webdir>sps/1.0/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>2.0</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/sps/2.0</namespace-uri>
-            <prefix>sps</prefix>
-            <local-name>suite</local-name>
-            <title>SPS 2.0 Conformance Test Suite</title>
-            <description>Checks conformance to OGC 09-000.</description>
-          </suite>
-          <revision>
-            <name>r7</name>
-            <sources>
-              <source>sps/2.0/ctl</source>
-            </sources>
-            <resources>sps/2.0/resources</resources>
-            <webdir>sps/2.0/web</webdir>
           </revision>
         </version>
       </standard>
@@ -156,53 +37,35 @@
             <description>Checks WCS implementations for conformance to OGC 05-076.</description>
           </suite>
           <revision>
-            <name>r5</name>
+            <name>r8</name>
             <sources>
               <source>wcs/1.0.0/ctl</source>
             </sources>
             <resources>wcs/1.0.0/resources</resources>
-            <webdir>wcs/1.0.0/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>1.1.1</name>
-          <suite>
-            <namespace-uri>http://schemas.opengis.net/wcs/1.1.1</namespace-uri>
-            <prefix>wcs</prefix>
-            <local-name>suite</local-name>
-            <title>WCS 1.1.1 Conformance Test Suite</title>
-            <description>Checks WCS implementations for conformance to OGC 07-067r2.</description>
-          </suite>
-          <revision>
-            <name>r1</name>
-            <sources>
-              <source>wcs/1.1.1/ctl</source>
-            </sources>
-            <resources>wcs/1.1.1/resources</resources>
-            <webdir>wcs/1.1.1/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>2.0.1</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/wcs/2.0</namespace-uri>
-            <prefix>wcs2</prefix>
-            <local-name>suite</local-name>
-            <title>WCS 2.0.1 Conformance Test Suite</title>
-            <description>Checks WCS Core implementations for conformance with OGC 09-110r3, 09-110r4.</description>
-          </suite>
-          <revision>
-            <name>r6</name>
-            <sources>
-              <source>wcs/2.0.1/ctl</source>
-            </sources>
-            <resources>wcs/2.0.1/resources</resources>
-            <webdir>wcs/2.0.1/web</webdir>
+            <webdir>wcs/1.0.0/site</webdir>
           </revision>
         </version>
       </standard>
       <standard>
         <name>Web Feature Service (WFS)</name>
+        <version>
+          <name>1.1.0</name>
+          <suite>
+            <namespace-uri>http://www.occamlab.com/ctl</namespace-uri>
+            <prefix>ctl</prefix>
+            <local-name>wfs-1.1.0-compliance-suite</local-name>
+            <title>WFS 1.1.0 Conformance Test Suite</title>
+            <description>Checks WFS implementations for conformance to OGC 04-094.</description>
+          </suite>
+          <revision>
+            <name>r21</name>
+            <sources>
+              <source>wfs/1.1.0/ctl</source>
+            </sources>
+            <resources>wfs/1.1.0/resources</resources>
+            <webdir>wfs/1.1.0/site</webdir>
+          </revision>
+        </version>
         <version>
           <name>1.0.0</name>
           <suite>
@@ -217,64 +80,12 @@
             <sources>
               <source>wfs/1.0.0/ctl</source>
             </sources>
-            <webdir>wfs/1.0.0/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>1.1.0</name>
-          <suite>
-            <namespace-uri>http://www.occamlab.com/ctl</namespace-uri>
-            <prefix>ctl</prefix>
-            <local-name>wfs-1.1.0-compliance-suite</local-name>
-            <title>WFS 1.1.0 Conformance Test Suite</title>
-            <description>Checks WFS implementations for conformance to OGC 04-094.</description>
-          </suite>
-          <revision>
-            <name>r13</name>
-            <sources>
-              <source>wfs/1.1.0/src</source>
-            </sources>
-            <resources>wfs/1.1.0/resources</resources>
-            <webdir>wfs/1.1.0/web</webdir>
-          </revision>
-        </version>
-        <version>
-          <name>2.0</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/cite/iso19142</namespace-uri>
-            <prefix>tns</prefix>
-            <local-name>ets-wfs-2.0-r12</local-name>
-            <title>WFS 2.0 (ISO 19142:2010) Conformance Test Suite</title>
-            <description>Checks WFS implementations for conformance to ISO 19142:2010.</description>
-          </suite>
-          <revision>
-            <name>2.0-r12</name>
-            <sources>
-              <source>wfs/2.0-r12/wfs-suite.ctl</source>
-            </sources>
-            <webdir>wfs/2.0-r12/web</webdir>
+            <webdir>wfs/1.0.0/site</webdir>
           </revision>
         </version>
       </standard>
       <standard>
         <name>Web Map Service (WMS)</name>
-        <version>
-          <name>1.1.1</name>
-          <suite>
-            <namespace-uri>http://www.opengis.net/wms</namespace-uri>
-            <prefix>wms</prefix>
-            <local-name>main_wms</local-name>
-            <title>WMS 1.1.1 Conformance Test Suite</title>
-            <description>Checks WMS implementations for conformance to OGC 01-068r3.</description>
-          </suite>
-          <revision>
-            <name>r3</name>
-            <sources>
-              <source>wms/1.1.1/ctl</source>
-            </sources>
-            <webdir>wms/1.1.1/web</webdir>
-          </revision>
-        </version>
         <version>
           <name>1.3.0</name>
           <suite>
@@ -285,11 +96,27 @@
             <description>Verifies conformance to ISO 19128:2005.</description>
           </suite>
           <revision>
-            <name>r7</name>
+            <name>r10</name>
             <sources>
               <source>wms/1.3.0/ctl</source>
             </sources>
-            <webdir>wms/1.3.0/web</webdir>
+            <webdir>wms/1.3.0/site</webdir>
+          </revision>
+        </version>
+        <version>
+          <name>1.1.1</name>
+          <suite>        <namespace-uri>http://www.opengis.net/wms</namespace-uri>
+            <prefix>wms</prefix>
+            <local-name>main_wms</local-name>
+            <title>WMS 1.1.1 Conformance Test Suite</title>
+            <description>Checks WMS implementations for conformance to OGC 01-068r3.</description>
+          </suite>
+          <revision>
+            <name>r7</name>
+            <sources>
+              <source>wms/1.1.1/ctl</source>
+            </sources>
+            <webdir>wms/1.1.1/site</webdir>
           </revision>
         </version>
       </standard>
@@ -300,16 +127,36 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19136</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-gml-3.2.1-r11</local-name>
+            <local-name>ets-gml32-3.2.1-r18</local-name>
             <title>GML 3.2 (ISO 19136:2007) Conformance Test Suite</title>
             <description>Checks GML application schemas or data sets for conformance to ISO 19136:2007.</description>
           </suite>
           <revision>
-            <name>3.2.1-r11</name>
+            <name>3.2.1-r18</name>
             <sources>
-              <source>gml/3.2.1-r11/gml-suite.ctl</source>
+              <source>gml32/3.2.1/ctl</source>
             </sources>
-            <webdir>gml/3.2.1-r11/web</webdir>
+            <webdir>gml32/3.2.1/site</webdir>
+          </revision>
+        </version>
+      </standard>
+      <standard>
+        <name>OGC KML</name>
+        <version>
+          <name>2.2</name>
+          <suite>
+            <namespace-uri>http://www.opengis.net/cite/kml22</namespace-uri>
+            <prefix>tns</prefix>
+            <local-name>ets-kml22-2.2-r11</local-name>
+            <title>OGC KML 2.2 Validator</title>
+            <description>Validates the structure and content of standard KML 2.2 documents.</description>
+          </suite>
+          <revision>
+            <name>2.2-r11</name>
+            <sources>
+              <source>kml22/2.2/ctl</source>
+            </sources>
+            <webdir>kml22/2.2/site</webdir>
           </revision>
         </version>
       </standard>
