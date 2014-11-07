@@ -1,3 +1,4 @@
+rem Location of the directory containing the Git repositories
 rem set ETS_SRC=%USERPROFILE%\ets-src
 rem mkdir "%ETS_SRC%" 2>NUL
 

@@ -1,3 +1,4 @@
+# Location of the directory containing the Git repositories
 #export ETS_SRC=$HOME/ets-src
 #mkdir $ETS_SRC 2>/dev/null
 

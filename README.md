@@ -45,8 +45,9 @@ are summarized below.
 </table>
 
 To setup a TEAM-engine instance, unpack the archive created by the build process and 
-just run the `setup-tebase` script for your environment. Several environment variables 
-must be set first (this can be done in the `setenv` script if desired):
+just run the `setup-tebase` script for your environment. In order to run the script 
+Maven and Git must be installed and available on the system path. Several environment 
+variables must be set first (this can be done in the `setenv` script if desired):
 
 * `TE_BASE`: A file system path that refers to the TEAM-engine instance directory.
 * `ETS_SRC`: A file system path that refers to a directory containing the Git repositories; 
@@ -57,6 +58,7 @@ A CSV file that lists the test suite releases of interest must be given as a scr
 
     $ ./setup-tebase ../../ctl-scripts-release.csv
 
+The OGC test suites currently included in this package are listed in the [CSV file](src/main/config/ctl-scripts-release.csv).
 
 Note that when building the [teamengine-web application](https://github.com/opengeospatial/teamengine), 
 if the 'ogc.cite' profile is active then all test suite dependencies from ets-resources are 
@@ -81,3 +83,4 @@ where `YY.MM.DD` denotes the desired release version.
 Alternatively, the property can simply be specified as a command-line option:
 
     $ mvn package -P ogc.cite -Dets-resources-version=YY.MM.DD
+
