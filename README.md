@@ -22,8 +22,8 @@ are summarized below.
   </tr>
   <tr>
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
-    <td>A CSV file that supplies the Git repository URL and tag name for the 
-    latest test suite releases. Each line contains two fields as shown below.
+    <td>A CSV file that contains a list of test suite releases. Each line has 
+    two fields as shown below (Git repository URL, tag name).
       <pre>https://github.com/opengeospatial/ets-kml22.git,2.2-r11</pre>
     </td>
   </tr>
@@ -66,7 +66,7 @@ incorporated within the WAR file. Otherwise the contents of the lib/ directory m
 copied to the application classpath (WEB-INF/lib). 
 
 The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version.
+where `YY.MM.DD` denotes the desired release version (e.g. 14.11.07).
 
     <profile>
       <id>ogc.cite</id>
@@ -84,3 +84,5 @@ Alternatively, the property can simply be specified as a command-line option:
 
     $ mvn package -P ogc.cite -Dets-resources-version=YY.MM.DD
 
+All releases are tagged in the GitHub repository and published to Maven Central at 
+[org.opengis.cite:ets-resources](http://search.maven.org/#search|ga|1|a%3A%22ets-resources%22).
