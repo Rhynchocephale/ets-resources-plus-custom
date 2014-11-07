@@ -19,9 +19,14 @@ fi
 csvfile="$(readlink -f "$1")"
 
 pushd $ETS_SRC
-# last record in CSV file may not have terminal newline
-while IFS="," read url tag || [ -n "$url" ]
+PREV_IFS=$IFS
+IFS=","
+# last record in CSV file may not have a terminal newline
+while read url tag || [ -n "$url" ]
 do
+  if [[ $url != http* ]]; then 
+    continue  # skip header record
+  fi
   ets_name=$(basename "$url" .git)
   if [ -z "$ets_name" ]; then
     break
@@ -38,6 +43,7 @@ do
   cp target/*-ctl.zip $TE_BASE/scripts/
   popd
 done < "$csvfile"
+IFS=$PREV_IFS
 
 pushd $TE_BASE/scripts
 # filename patterns which match no files will expand to null string
