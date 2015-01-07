@@ -15,12 +15,6 @@ are summarized below.
     settings for the latest test suite releases.</td>
   </tr>
   <tr>
-    <td>config-approved.xml</td>
-    <td>A configuration file that includes only test suite releases that have 
-    been formally approved for compliance certification by the OGC Technical 
-    Committee.</td>
-  </tr>
-  <tr>
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
@@ -66,7 +60,7 @@ incorporated within the WAR file. Otherwise the contents of the lib/ directory m
 copied to the application classpath (WEB-INF/lib). 
 
 The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version (e.g. 14.11.07).
+where `YY.MM.DD` denotes the desired release version (e.g. 15.01.07).
 
     <profile>
       <id>ogc.cite</id>
@@ -85,4 +79,4 @@ Alternatively, the property can simply be specified as a command-line option:
     $ mvn package -P ogc.cite -Dets-resources-version=YY.MM.DD
 
 All releases are tagged in the GitHub repository and published to Maven Central at 
-[org.opengis.cite:ets-resources](http://search.maven.org/#search|ga|1|a%3A%22ets-resources%22).
+[org.opengis.cite:ets-resources](http://search.maven.org/#search|ga|1|a%3Aets-resources).

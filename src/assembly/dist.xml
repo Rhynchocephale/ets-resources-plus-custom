@@ -57,10 +57,5 @@
       <outputDirectory>/</outputDirectory>
       <filtered>true</filtered>
     </file>
-    <file>
-      <source>${project.basedir}/src/main/config/teamengine/config-approved.xml</source>
-      <outputDirectory>/</outputDirectory>
-      <filtered>true</filtered>
-    </file>
   </files>
 </assembly>
