@@ -60,7 +60,7 @@ incorporated within the WAR file. Otherwise the contents of the lib/ directory m
 copied to the application classpath (WEB-INF/lib). 
 
 The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version (e.g. 15.01.07).
+where `YY.MM.DD` denotes the desired release version (e.g. 15.06.04).
 
     <profile>
       <id>ogc.cite</id>
