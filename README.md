@@ -1,8 +1,8 @@
 ## OGC Test Suite Resources
 
-This project assembles all libraries required by OGC conformance test suites 
-into a single archive for distribution. The contents of the resulting archive 
-are summarized below.
+This project assembles all Java libraries required by OGC conformance test 
+suites into a single archive for distribution. The contents of the resulting 
+archive are summarized in the table below.
 
 <table style="text-align: left;">
   <tr>
@@ -18,13 +18,15 @@ are summarized below.
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
-      <pre>https://github.com/opengeospatial/ets-kml22.git,2.2-r11</pre>
+      <pre>Repository,Tag
+https://github.com/opengeospatial/ets-gml32.git,1.20
+...</pre>
     </td>
   </tr>
   <tr>
     <td>lib/</td>
-    <td>A directory containing the required Java libraries; these must be 
-    available on the class path.</td>
+    <td>A directory containing the required Java libraries--these must be 
+    available on the classpath.</td>
   </tr>
   <tr>
     <td style="vertical-align: top">bin/</td>
@@ -39,12 +41,12 @@ are summarized below.
 </table>
 
 To setup a TEAM-engine instance, unpack the archive created by the build process and 
-just run the `setup-tebase` script for your environment. In order to run the script 
-Maven and Git must be installed and available on the system path. Several environment 
-variables must be set first (this can be done in the `setenv` script if desired):
+just run the `setup-tebase` script for your environment. Maven and Git must be installed 
+and available on the system path in order to run the script. Several environment 
+variables must be set (this can be done in the `setenv` script if desired):
 
 * `TE_BASE`: A file system path that refers to the TEAM-engine instance directory.
-* `ETS_SRC`: A file system path that refers to a directory containing the Git repositories; 
+* `ETS_SRC`: A file system path that refers to a directory containing the Git repositories
   (a repository will be cloned into here if it doesn't already exist).
 * `JAVA_HOME`: Refers to a JDK installation directory.
 
