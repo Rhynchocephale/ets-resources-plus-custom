@@ -10,13 +10,13 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/cat30</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-cat30-0.7</local-name>
+            <local-name>ets-cat30-0.8</local-name>
             <title>Test suite ets-cat30</title>
             <description>Assesses conformance of the IUT with respect to OGC 12-176r5 
         (OGC Catalogue Services 3.0 Specification - HTTP Protocol Binding).</description>
           </suite>
           <revision>
-            <name>0.7</name>
+            <name>0.8</name>
             <status>Beta</status>
             <sources>
               <source>cat30/3.0.0/ctl</source>
@@ -34,7 +34,7 @@
             <description>Checks catalogue implementations for conformance to the CSW part of OGC 07-006r1.</description>
           </suite>
           <revision>
-            <name>1.11</name>
+            <name>1.12</name>
             <sources>
               <source>csw/2.0.2/ctl</source>
             </sources>
@@ -165,7 +165,7 @@
             <description>Checks WMS implementations for conformance to OGC 01-068r3.</description>
           </suite>
           <revision>
-            <name>1.9</name>
+            <name>1.10</name>
             <sources>
               <source>wms/1.1.1/ctl</source>
             </sources>
@@ -232,12 +232,13 @@
           <suite>
             <namespace-uri>http://www.opengis.net/cite/iso19136</namespace-uri>
             <prefix>tns</prefix>
-            <local-name>ets-gml32-1.20</local-name>
+            <local-name>ets-gml32-1.21</local-name>
             <title>GML 3.2 (ISO 19136:2007) Conformance Test Suite</title>
             <description>Checks GML application schemas or data sets for conformance to ISO 19136:2007.</description>
           </suite>
           <revision>
-            <name>1.20</name>
+            <name>1.21</name>
+            <status>Final</status>
             <sources>
               <source>gml32/3.2.1/ctl</source>
             </sources>
