@@ -10,16 +10,11 @@ archive are summarized in the table below.
     <th>Description</th>
   </tr>
   <tr>
-    <td>config.xml</td>
-    <td>A TEAM-engine configuration file (TE_BASE/config.xml) that specifies 
-    settings for the latest test suite releases.</td>
-  </tr>
-  <tr>
     <td style="vertical-align: top">ctl-scripts-release.csv</td>
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
       <pre>Repository,Tag
-https://github.com/opengeospatial/ets-gml32.git,1.20
+https://github.com/opengeospatial/ets-gml32.git,1.21
 ...</pre>
     </td>
   </tr>
