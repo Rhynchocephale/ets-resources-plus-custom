@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-resources</artifactId>
-  <version>15.MM.DD-SNAPSHOT</version>
+  <version>15.11.05-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>OGC Test Suite Resources</name>
@@ -81,7 +81,7 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-gml32</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -93,13 +93,13 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-wfs20</artifactId>
-      <version>1.19</version>
+      <version>1.20</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-cat30</artifactId>
-      <version>0.9</version>
+      <version>0.10</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -108,19 +108,5 @@
       <version>2.2-r11</version>
       <scope>runtime</scope>
     </dependency>
-    <!--
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-kml2</artifactId>
-      <version>0.4-SNAPSHOT</version>
-      <scope>runtime</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-19139</artifactId>
-      <version>r4</version>
-      <scope>runtime</scope>
-    </dependency>
-    -->
   </dependencies>
 </project>

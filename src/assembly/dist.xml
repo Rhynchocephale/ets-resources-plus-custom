@@ -16,7 +16,7 @@
         <exclude>xerces:xercesImpl</exclude>
         <exclude>xml-resolver:*</exclude>
         <exclude>org.opengis.cite.teamengine:*</exclude>
-        <exclude>net.sourceforge.saxon:*</exclude>
+        <exclude>org.opengis.cite.saxon:*</exclude>
         <exclude>com.sun.jersey:jersey-core</exclude>
         <exclude>com.thaiopensource:*</exclude>
       </excludes>
