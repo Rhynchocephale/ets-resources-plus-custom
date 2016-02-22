@@ -111,7 +111,7 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sta10</artifactId>
-      <version>0.2</version>
+      <version>0.3</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
