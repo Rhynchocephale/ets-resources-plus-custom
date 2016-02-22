@@ -87,13 +87,19 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-wfs20</artifactId>
-      <version>1.20</version>
+      <version>1.21</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-cat30</artifactId>
       <version>0.10</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-kml2</artifactId>
+      <version>0.4</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -106,6 +112,12 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-sta10</artifactId>
       <version>0.2</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-owc10</artifactId>
+      <version>0.1</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
