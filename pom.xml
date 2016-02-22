@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-resources</artifactId>
-  <version>16.02.DD-SNAPSHOT</version>
+  <version>16.02.23-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>OGC Test Suite Resources</name>

@@ -14,8 +14,8 @@ archive are summarized in the table below.
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
       <pre>Repository,Tag
-https://github.com/opengeospatial/ets-gml32.git,1.22
-https://github.com/opengeospatial/ets-wfs20.git,1.20
+https://github.com/opengeospatial/ets-gml32.git,1.23
+https://github.com/opengeospatial/ets-wfs20.git,1.21
 ...</pre>
     </td>
   </tr>
@@ -58,7 +58,7 @@ incorporated within the WAR file. Otherwise the contents of the lib/ directory m
 copied to the application classpath (WEB-INF/lib). 
 
 The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version (e.g. 15.11.05).
+where `YY.MM.DD` denotes the desired release version (e.g. 16.02.23).
 
     <profile>
       <id>ogc.cite</id>
