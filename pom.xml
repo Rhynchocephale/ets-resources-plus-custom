@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-resources</artifactId>
-  <version>16.06.08-SNAPSHOT</version>
+  <version>16.06.08</version>
   <packaging>pom</packaging>
 
   <name>OGC Test Suite Resources</name>
@@ -25,7 +25,7 @@
     <url>https://github.com/opengeospatial/ets-resources</url>
     <connection>scm:git:https://github.com/opengeospatial/ets-resources.git</connection>
     <developerConnection>scm:git:git@github.com:opengeospatial/ets-resources.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>16.06.08</tag>
   </scm>
   <developers>
     <developer>
