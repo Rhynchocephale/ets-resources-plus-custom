@@ -46,7 +46,7 @@ done < "$csvfile"
 IFS=$PREV_IFS
 
 pushd $TE_BASE/scripts
-# filename patterns which match no files will expand to null string
+# filename patterns that match no files will expand to null string
 shopt -s nullglob
 for f in *.zip
 do

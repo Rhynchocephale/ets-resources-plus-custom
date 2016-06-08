@@ -21,7 +21,7 @@ https://github.com/opengeospatial/ets-wfs20.git,1.22
   </tr>
   <tr>
     <td>lib/</td>
-    <td>A directory containing required Java libraries--these must be 
+    <td>A directory containing required runtime dependencies--these must be 
     available on the application classpath.</td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@ incorporated within the WAR file. Otherwise the contents of the lib/ directory m
 copied to the application classpath (WEB-INF/lib). 
 
 The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version (e.g. 16.02.23).
+where `YY.MM.DD` denotes the desired release version (e.g. 16.06.08).
 
     <profile>
       <id>ogc.cite</id>
