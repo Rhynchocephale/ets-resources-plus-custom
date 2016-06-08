@@ -2,7 +2,7 @@
 :: Reads a CSV file (first argument) where each record contains two fields:
 :: Git repository URL, tag name
 :: Example:
-:: https://github.com/opengeospatial/ets-kml22.git,2.2-r10
+:: https://github.com/opengeospatial/ets-wfs20.git,1.22
 ::
 :: Note: Maven and Git must be installed and available on the system path
 
@@ -33,8 +33,6 @@ for %%f in (*.zip) do ("%JAVA_HOME%"\bin\jar xf %%f & del %%f)
 
 cd /d %home%
 robocopy ..\..\lib %TE_BASE%\resources\lib *.jar /mir
-if exist "%TE_BASE%\config.xml" rename "%TE_BASE%\config.xml" "config-PREV.xml"
-copy ..\..\config.xml %TE_BASE%\
 
 goto :eof
 

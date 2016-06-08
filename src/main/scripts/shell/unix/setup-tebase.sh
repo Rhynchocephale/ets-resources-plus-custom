@@ -1,9 +1,9 @@
 #!/bin/bash
 # Sets up a TEAM-engine instance with test suites listed in a CSV file.
-# Reads a CSV file (first argument) where each ETS record contains two fields:
+# Reads a CSV file (first argument) where each record contains two fields:
 # Git repository URL, tag name
 # Example:
-# https://github.com/opengeospatial/ets-kml22.git,2.2-r10
+# https://github.com/opengeospatial/ets-wfs20.git,1.22
 #
 # Note: Maven and Git must be installed and available on the system path
 
@@ -56,7 +56,3 @@ done
 
 pushd $base
 rsync -r --delete ../../lib/ $TE_BASE/resources/lib
-if [ -e "$TE_BASE/config.xml" ]; then
-  mv "$TE_BASE/config.xml" "$TE_BASE/config-PREV.xml"
-fi
-cp ../../config.xml $TE_BASE

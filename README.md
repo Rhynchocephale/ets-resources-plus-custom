@@ -15,14 +15,14 @@ archive are summarized in the table below.
     two fields as shown below (Git repository URL, tag name).
       <pre>Repository,Tag
 https://github.com/opengeospatial/ets-gml32.git,1.23
-https://github.com/opengeospatial/ets-wfs20.git,1.21
+https://github.com/opengeospatial/ets-wfs20.git,1.22
 ...</pre>
     </td>
   </tr>
   <tr>
     <td>lib/</td>
-    <td>A directory containing the required Java libraries--these must be 
-    available on the classpath.</td>
+    <td>A directory containing required Java libraries--these must be 
+    available on the application classpath.</td>
   </tr>
   <tr>
     <td style="vertical-align: top">bin/</td>
