@@ -15,7 +15,7 @@ if [%1]==[] echo Location of CSV file not specified. & goto :eof
 set csvfile=%~f1
 
 cd /d %ETS_SRC%
-for /F "skip=1 usebackq tokens=1,2 delims=," %%a in ("%csvfile%") do (
+for /F "eol=# skip=1 usebackq tokens=1,2 delims=," %%a in ("%csvfile%") do (
   if exist %%~na (
     cd /d %%~na
     git fetch --tags
