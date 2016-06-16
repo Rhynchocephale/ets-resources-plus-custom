@@ -24,7 +24,7 @@ IFS=","
 # last record in CSV file may not have a terminal newline
 while read url tag || [ -n "$url" ]
 do
-  if [ $url != http* -o $url =~ ^# ]; then 
+  if ! [[ $url =~ http.* ]] || [[ $url =~ ^#.* ]]; then
     continue  # skip header record or comment line
   fi
   ets_name=$(basename "$url" .git)
