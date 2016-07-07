@@ -1,9 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-resources</artifactId>
-  <version>16.06.09-SNAPSHOT</version>
+  <version>16.07.DD-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>OGC Test Suite Resources</name>
@@ -99,7 +101,7 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-kml2</artifactId>
-      <version>0.4</version>
+      <version>0.5</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>

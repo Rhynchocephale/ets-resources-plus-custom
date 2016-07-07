@@ -1,7 +1,7 @@
 ## OGC Test Suite Resources
 
-This project assembles all Java libraries required by OGC conformance test 
-suites into a single archive for distribution. The contents of the resulting 
+This umbrella project assembles all Java libraries required by OGC conformance 
+test suites into a single archive for distribution. The contents of the resulting 
 archive are summarized in the table below.
 
 <table style="text-align: left;">
@@ -52,29 +52,8 @@ A CSV file that lists the test suite releases of interest must be given as a scr
 
 The OGC test suites currently included in this package are listed in the [CSV file](src/main/config/ctl-scripts-release.csv).
 
-Note that when building the [teamengine-web application](https://github.com/opengeospatial/teamengine), 
-if the 'ogc.cite' profile is active then all test suite dependencies from ets-resources are 
-incorporated within the WAR file. Otherwise the contents of the lib/ directory must be 
-copied to the application classpath (WEB-INF/lib). 
-
-The 'ets-resources-version' property can be set in ${user.home}/.m2/settings.xml as shown below, 
-where `YY.MM.DD` denotes the desired release version (e.g. 16.06.08).
-
-    <profile>
-      <id>ogc.cite</id>
-      <!-- Activate by default or only when desired using the -P option
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-      -->
-      <properties>
-        <ets-resources-version>YY.MM.DD</ets-resources-version>
-      </properties>
-    </profile>
-
-Alternatively, the property can simply be specified as a command-line option:
-
-    $ mvn package -P ogc.cite -Dets-resources-version=YY.MM.DD
+The JAR files in the TE_BASE/resources/lib/ directory are added to the classpath when the 
+test suites are run using the web application.
 
 All releases are tagged in the GitHub repository and published to Maven Central at 
 [org.opengis.cite:ets-resources](http://search.maven.org/#search|ga|1|a%3Aets-resources).
