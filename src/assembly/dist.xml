@@ -49,7 +49,7 @@
   </fileSets>
   <files>
     <file>
-      <source>${project.basedir}/src/main/config/ctl-scripts-release.csv</source>
+      <source>${project.basedir}/src/main/config/ets-releases.csv</source>
       <lineEnding>unix</lineEnding>
     </file>
   </files>

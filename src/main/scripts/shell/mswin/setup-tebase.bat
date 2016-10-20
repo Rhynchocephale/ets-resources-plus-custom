@@ -2,7 +2,7 @@
 :: Reads a CSV file (first argument) where each record contains two fields:
 :: Git repository URL, tag name
 :: Example:
-:: https://github.com/opengeospatial/ets-wfs20.git,1.22
+:: https://github.com/opengeospatial/ets-wfs20.git,1.25
 ::
 :: Note: Maven and Git must be installed and available on the system path
 

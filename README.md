@@ -10,12 +10,12 @@ archive are summarized in the table below.
     <th>Description</th>
   </tr>
   <tr>
-    <td style="vertical-align: top">ctl-scripts-release.csv</td>
+    <td style="vertical-align: top">ets-releases.csv</td>
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
       <pre>Repository,Tag
-https://github.com/opengeospatial/ets-gml32.git,1.23
-https://github.com/opengeospatial/ets-wfs20.git,1.22
+https://github.com/opengeospatial/ets-gml32.git,1.24
+https://github.com/opengeospatial/ets-wfs20.git,1.25
 ...</pre>
     </td>
   </tr>
@@ -48,9 +48,9 @@ variables must be set (this can be done in the `setenv` script if desired):
 
 A CSV file that lists the test suite releases of interest must be given as a script argument:
 
-    $ ./setup-tebase ../../ctl-scripts-release.csv
+    $ ./setup-tebase ../../ets-releases.csv
 
-The OGC test suites currently included in this package are listed in the [CSV file](src/main/config/ctl-scripts-release.csv).
+The OGC test suites currently included in this package are listed in the [CSV file](src/main/config/ets-releases.csv).
 
 The JAR files in the TE_BASE/resources/lib/ directory are added to the classpath when the 
 test suites are run using the web application.
