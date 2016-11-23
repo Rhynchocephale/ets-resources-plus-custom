@@ -14,8 +14,8 @@ archive are summarized in the table below.
     <td>A CSV file that contains a list of test suite releases. Each line has 
     two fields as shown below (Git repository URL, tag name).
       <pre>Repository,Tag
-https://github.com/opengeospatial/ets-gml32.git,1.24
-https://github.com/opengeospatial/ets-wfs20.git,1.25
+https://github.com/opengeospatial/ets-gml32.git,1.25
+https://github.com/opengeospatial/ets-wfs20.git,1.26
 ...</pre>
     </td>
   </tr>

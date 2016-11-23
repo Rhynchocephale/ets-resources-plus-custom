@@ -5,7 +5,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.opengis.cite</groupId>
   <artifactId>ets-resources</artifactId>
-  <version>16.10.DD-SNAPSHOT</version>
+  <version>16.11.24-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>OGC Test Suite Resources</name>
@@ -45,7 +45,7 @@
     <plugins>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
-        <version>2.6</version>
+        <version>3.0</version>
         <configuration>
           <appendAssemblyId>false</appendAssemblyId>
           <descriptors>
@@ -77,7 +77,7 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-gml32</artifactId>
-      <version>1.24</version>
+      <version>1.25</version>
       <scope>runtime</scope>
       <exclusions>
         <exclusion>
@@ -89,7 +89,7 @@
     <dependency>
       <groupId>org.opengis.cite</groupId>
       <artifactId>ets-wfs20</artifactId>
-      <version>1.25</version>
+      <version>1.26</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -124,8 +124,8 @@
     </dependency>
     <dependency>
       <groupId>org.opengis.cite</groupId>
-      <artifactId>ets-owc10</artifactId>
-      <version>0.1</version>
+      <artifactId>ets-wms13</artifactId>
+      <version>1.19</version>
       <scope>runtime</scope>
     </dependency>
     <dependency>
@@ -138,6 +138,12 @@
       <groupId>org.opengis.cite</groupId>
       <artifactId>cite1-utils</artifactId>
       <version>1.1.1</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.opengis.cite</groupId>
+      <artifactId>ets-owc10</artifactId>
+      <version>0.1</version>
       <scope>runtime</scope>
     </dependency>
   </dependencies>
